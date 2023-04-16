@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PT2</title>
+    <style>
+      body {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+      }
+      form {
+        display: inline-block;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mental Health prediction</h1>
+    <form action="{{url_for('predict')}}" method="post">
+         <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+        <option value="2">Trans</option>
+      </select><br><br>
+
+      <label for="family_history">Family history:</label>
+      <input type="radio" id="family_history_yes" name="family_history" value="0">
+      <label for="family_history_yes">Yes</label>
+      <input type="radio" id="family_history_no" name="family_history" value="1">
+      <label for="family_history_no">No</label><br><br>
+
+      <label for="benefits">Benefits:</label>
+      <input type="radio" id="benefits_health" name="benefits" value="0">
+      <label for="benefits_health">Don't Know</label>
+      <input type="radio" id="benefits_dental" name="benefits" value="1">
+      <label for="benefits_dental">No</label><
+        <input type="radio" id="benefits_dental1" name="benefits" value="2">
+      <label for="benefits_dental1">Yes</label><br><br>
+
+      <label for="care_options">Care options:</label>
+      <input type="radio" id="care_options_yes" name="care_options" value="0">
+      <label for="care_options_yes">No</label>
+      <input type="radio" id="care_options_no" name="care_options" value="2">
+      <label for="care_options_no">Yes</label>
+        <input type="radio" id="care_options_no1" name="care_options" value="1">
+      <label for="care_options_no1">Not Sure</label><br><br>
+
+      <label for="anonymity">Anonymity:</label>
+      <input type="radio" id="anonymity_yes" name="anonymity" value="2">
+      <label for="anonymity_yes">Yes</label>
+      <input type="radio" id="anonymity_no" name="anonymity" value="1">
+      <label for="anonymity_no">No</label>
+      <input type="radio" id="anonymity_no1" name="anonymity" value="0">
+      <label for="anonymity_no1">Don't know</label><br><br>
+
+      <label for="leave">Leave:</label>
+      <input type="radio" id="leave_easy" name="leave" value="0">
+      <label for="leave_easy">Don't Know</label>
+      <input type="radio" id="leave_difficult" name="leave" value="1">
+      <label for="leave_difficult">Somewhat difficult</label>
+      <input type="radio" id="leave_difficult1" name="leave" value="2">
+      <label for="leave_difficult1">Somewhat easy</label>
+      <input type="radio" id="leave_difficult2" name="leave" value="3">
+      <label for="leave_difficult2">Very difficult</label>
+      <input type="radio" id="leave_difficult3" name="leave" value="4">
+      <label for="leave_difficult3">Very easy</label><br><br>
+
+      <label for="work_interfere">Work interfere:</label>
+      <select id="work_interfere" name="work_interfere">
+        <option value="2">Often</option>
+        <option value="4">Sometimes</option>
+        <option value="3">Rarely</option>
+        <option value="1">Never</option>
+         <option value="0">Don't Know</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
