@@ -2,8 +2,8 @@ from flask import Flask,render_template,redirect,flash,request
 from flask_cors import CORS, cross_origin
 import pickle
 import numpy as np
-app=Flask(__name__)
 
+app=Flask(__name__)
 CORS(app)
 @app.route("/")
 def home():
