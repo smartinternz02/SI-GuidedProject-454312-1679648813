@@ -30,7 +30,9 @@ def predict():
 
     # Make prediction and return result
     prediction = model.predict(input_data)
-    return str(prediction[0])
+    yes="Person has mental illness"
+    no='person is mentally stable'
+    return "{}".format(yes if str(prediction[0])=='1' else no)
 
 if __name__=='__main__':
     app.run(host='0.0.0.0', port=1234, debug=True)
